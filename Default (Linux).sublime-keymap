@@ -7,7 +7,7 @@
   	{ "keys" : ["ctrl+y"], "command": "paste" },
   	{ "keys" : ["alt+w"], "command": "copy" },
   	{ "keys" : ["ctrl+w"], "command": "cut" },
-  	{ "keys" : ["ctrl+shift+-"], "commmand" : "undo" },
+  	{ "keys" : ["ctrl+shift+-"], "command" : "undo" },
   	{ "keys" : ["ctrl+s"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false} },
   	{ "keys" : ["ctrl+x", "ctrl+s"], "command" : "save"},
 	{ "keys" : ["alt+g", "alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
