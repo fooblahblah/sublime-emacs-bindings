@@ -1,4 +1,5 @@
 [
+	{ "keys" : ["ctrl+x", "k"], "command": "close" },
 	{ "keys" : ["ctrl+space"], "command": "set_mark" },
 	{ "keys" : ["alt+shift+,"], "command": "move_to", "args": {"to": "bof", "extend": false} },
 	{ "keys" : ["alt+shift+."], "command": "move_to", "args": {"to": "eof", "extend": false} },
