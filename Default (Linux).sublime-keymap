@@ -1,0 +1,44 @@
+[
+	{ "keys" : ["ctrl+space"], "command": "set_mark" },
+	{ "keys" : ["alt+shift+,"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+	{ "keys" : ["alt+shift+."], "command": "move_to", "args": {"to": "eof", "extend": false} },
+	{ "keys" : ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  	{ "keys" : ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+  	{ "keys" : ["ctrl+y"], "command": "paste" },
+  	{ "keys" : ["alt+w"], "command": "copy" },
+  	{ "keys" : ["ctrl+w"], "command": "cut" },
+  	{ "keys" : ["ctrl+shift+-"], "commmand" : "undo" },
+  	{ "keys" : ["ctrl+s"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false} },
+  	{ "keys" : ["ctrl+x", "ctrl+s"], "command" : "save"},
+	{ "keys" : ["alt+g", "alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	{ "keys" : ["ctrl+]"], "command": "single_selection", "context":
+		[
+			{ "key": "num_selections", "operator": "not_equal", "operand": 1 }
+		]
+	},
+	{ "keys" : ["ctrl+]"], "command": "clear_fields", "context":
+		[
+			{ "key": "has_next_field", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys" : ["ctrl+]"], "command": "clear_fields", "context":
+		[
+			{ "key": "has_prev_field", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys" : ["ctrl+]"], "command": "hide_panel", "context":
+		[
+			{ "key": "panel_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys" : ["ctrl+]"], "command": "hide_overlay", "context":
+		[
+			{ "key": "overlay_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys" : ["ctrl+]"], "command": "hide_auto_complete", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	}
+]
