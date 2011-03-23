@@ -9,6 +9,7 @@
   	{ "keys" : ["ctrl+w"], "command": "cut" },
   	{ "keys" : ["ctrl+shift+-"], "command" : "undo" },
   	{ "keys" : ["ctrl+s"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false} },
+	{ "keys" : ["alt+shift+5"], "command" : "show_panel", "args": {"panel": "replace"} },
   	{ "keys" : ["ctrl+x", "ctrl+s"], "command" : "save"},
 	{ "keys" : ["alt+g", "alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	{ "keys" : ["ctrl+]"], "command": "single_selection", "context":
