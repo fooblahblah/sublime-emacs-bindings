@@ -1,4 +1,6 @@
-[
+[	
+	{ "keys" : ["ctrl+d"], "command": "right_delete" },
+	{ "keys" : ["ctrl+k"], "command": "addToKillRing" },
 	{ "keys" : ["ctrl+x", "k"], "command": "close" },
 	{ "keys" : ["ctrl+space"], "command": "set_mark" },
 	{ "keys" : ["alt+shift+,"], "command": "move_to", "args": {"to": "bof", "extend": false} },
