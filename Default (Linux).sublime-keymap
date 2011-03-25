@@ -1,8 +1,6 @@
 [	
-	{ "keys" : ["ctrl+d"], "command": "right_delete" },
-	{ "keys" : ["ctrl+k"], "command": "addToKillRing" },
+	{ "keys" : ["ctrl+d"], "command" : "right_delete" },
 	{ "keys" : ["ctrl+x", "k"], "command": "close" },
-	{ "keys" : ["ctrl+space"], "command": "set_mark" },
 	{ "keys" : ["alt+shift+,"], "command": "move_to", "args": {"to": "bof", "extend": false} },
 	{ "keys" : ["alt+shift+."], "command": "move_to", "args": {"to": "eof", "extend": false} },
 	{ "keys" : ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
@@ -44,5 +42,12 @@
 		[
 			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
 		]
-	}
+	},
+	{ "keys": ["ctrl+w"], "command": "expand_selection", "args": {"to": "word"} },
+	{ "keys": ["ctrl+k"], "command": "emacs_kill_line" },
+	{ "keys": ["ctrl+y"], "command": "paste" },
+	{ "keys": ["ctrl+space"], "command": "emacs_set_mark" },
+	{ "keys": ["ctrl+w"], "command": "emacs_kill_to_mark" },
+	{ "keys": ["alt+w"], "command": "emacs_kill_ring_save" },
+	{ "keys": ["ctrl+g"], "command": "cancel_mark" }
 ]
