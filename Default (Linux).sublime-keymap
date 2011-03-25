@@ -1,7 +1,6 @@
 [	
 	{ "keys": ["ctrl+k"], "command": "emacs_kill_line" },
 	{ "keys": ["ctrl+y"], "command": "paste" },
-	{ "keys": ["ctrl+space"], "command": "emacs_set_mark" },
 	{ "keys": ["ctrl+g"], "command": "cancel_mark" },
 	{ "keys" : ["ctrl+d"], "command" : "right_delete" },
 	{ "keys" : ["ctrl+x", "k"], "command": "close" },
@@ -49,6 +48,8 @@
 	}
 ]
 
-//	{ "keys": ["ctrl+w"], "command": "expand_selection", "args": {"to": "word"} },
+//	{ "keys": ["ctrl+space"], "command": "emacs_set_mark" },
 //	{ "keys": ["ctrl+w"], "command": "emacs_kill_to_mark" },
+//	{ "keys": ["ctrl+w"], "command": "expand_selection", "args": {"to": "word"} },
 //	{ "keys": ["alt+w"], "command": "emacs_kill_ring_save" },
+
